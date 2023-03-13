@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /*  Cores */
+  --background-color: #fff;
+  --primary-color: #fba723;
+  --secondary-color: #e4931b;
+  --text-color: #7f7b77;
+  --hover-color: #fad487;
+  --hover-color-text: #a0a0a0;
+}
+
+html {
+  font-size: 80%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #fff;
+}
+
+section {
+  min-height: 100vh;
+  padding: 0.5rem 5% 1rem;
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 9%;
+  background: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-orc {
+  font-size: 1.2rem;
+  background-color: var(--hover-color);
+  border-radius: 20px;
+}
+
+#menu-icon {
+  opacity: 0;
+}
+
+.navbar a {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-left: 2rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: var(--tran-04);
+}
+
+.navbar a:hover {
+  color: var(--hover-color-text);
+}
+
+.navbar a.active {
+  color: var(--primary-color);
+}
