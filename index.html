@@ -30,24 +30,25 @@
     <title>MARCENARIA TELEIOS</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo"><img src="/assets/marcenaria.jpg" alt="" /></a>
-      <i class="bx bx-menu" id="menu-icon"></i>
-
-      <nav class="navbar">
-        <a href="#inicio" class="active" alt="">INICIO</a>
-        <a href="#sobre">SOBRE</a>
-        <a href="#projetos">PROJETOS</a>
-        <a href="#servicos">SERVIÇOS</a>
-        <a href="#dicas">DICAS</a>
-        <a href="#contato">CONTATO</a>
-      </nav>
-    </header>
-
-    <!----------PAGINA PRINCIPAL-------->
     <style>
+      html {
+      }
+
+      .nav {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+        font-weight: 800;
+      }
+
+      .nav-link {
+        color: #3a3a3a;
+        text-decoration: none;
+      }
+
+      /*===== Carrossel =====*/
+
       .carousel-item {
-        height: 40rem;
+        height: 30rem;
         background: #777;
         color: #fff;
         position: relative;
@@ -60,7 +61,43 @@
         right: 0;
         padding-bottom: 50px;
       }
+
+      .container .btn {
+        background-color: #e4931b;
+        font-size: 1.4rem;
+      }
+
+      .container .btn:hover {
+        background-color: #fba723;
+        box-shadow: 0, 0, 1 #fad487;
+      }
+
+      .container p {
+        font-size: 1.5rem;
+      }
+
+      .container h1 {
+        font-size: 1.8rem;
+        font-weight: 900;
+      }
     </style>
+
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projetos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contato</a>
+      </li>
+    </ul>
+
+    <!----------PAGINA PRINCIPAL-------->
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -70,19 +107,36 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="container">
-            <h1>exemplo line</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
-              voluptas non mollitia voluptate fugiat voluptatem qui aliquam
-              itaque, est commodi magnam deserunt nihil reiciendis aperiam
-              eligendi modi corrupti minima error?
-            </p>
+            <h1>Marcenaria Teleios</h1>
+            <p>Transformando madeira em arte. Perfeição em cada detalhe!</p>
             <a href="#" class="btn btn-lg btn-primary">
-              Faça ja seu orçamento
+              Faça já seu orçamento
             </a>
           </div>
         </div>
+        <div class="carousel-item">
+          </div>
+        </div>
       </div>
+      <a
+        href="#myCarousel"
+        class="carousel-control-prev"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="sr-only">Anterior</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+
+      <a
+        href="#myCarousel"
+        class="carousel-control-next"
+        role="button"
+        data-slide="next"
+      >
+        <span class="sr-only">Próximo</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
     </div>
 
     <script src="script.js"></script>
