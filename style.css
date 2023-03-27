@@ -27,12 +27,20 @@ html {
 }
 
 body {
-  background: var(--primary-color);
+  background: var(--background-color);
+}
+
+main {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1260px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 section {
-  min-height: 100vh;
-  padding: 0.5rem 5% 1rem;
+  padding: 1rem 5% 1rem;
   color: var(--text-color);
 }
 
@@ -82,6 +90,24 @@ span {
   font-size: 3rem;
   color: var(--hover-color);
   display: none;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.info-container .info-box {
+}
+
+hr {
+  display: flex;
+  margin: 0 9%;
 }
 
 .home {
